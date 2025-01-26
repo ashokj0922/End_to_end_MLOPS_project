@@ -63,6 +63,9 @@ class ModelEvaluation:
                 # https://mlflow.org/docs/latest/model-registry.html#api-workflow
                 mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
             else:
+                # mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
                 mlflow.sklearn.log_model(model, "model")
+
+
 
     
